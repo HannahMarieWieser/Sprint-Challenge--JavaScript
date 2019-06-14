@@ -19,39 +19,40 @@ function consume(param1, param2, cb){
 */
 
 //Create a function named add that returns the sum of two numbers
-function add(arg1, arg2, cb){
-  return cb(arg1 + arg2);
+function add(arg1, arg2){
+  return arg1 + arg2;
 }
+//consume(2,2,add);
 
-add(firstnum, secnum, (function(first){
-  console.log(first)
-}));
+// add(firstnum, secnum, (function(first){
+//   console.log(first)
+// }));
 
 
 //Create a function named multiply that returns the product of two numbers 
-function multiply(arg1, arg2, cb){
-  return cb(arg1 * arg2);
+function multiply(arg1, arg2){
+  return arg1 * arg2;
 }
 
-multiply(firstnum, secnum, (function(second){
-  console.log(second)
-}));
+// multiply(firstnum, secnum, (function(second){
+//   console.log(second)
+// }));
 
 
 //Create a function named greeting that accepts a first and last name and returns "Hello first-name last-name, nice to meet you!"
-function greeting(arg1, arg2, cb){
-  return cb(`Hello ${arg1} ${arg2}, nice to meet you!`);
+function greeting(arg1, arg2){
+  return `Hello ${arg1} ${arg2}, nice to meet you!`;
 }
 
-greeting(firstname, secname, (function(third){
-  console.log(third)
-}));
+// greeting(firstname, secname, (function(third){
+//   console.log(third)
+// }));
 
 
 /* Step 3: Check your work by un-commenting the following calls to consume(): */
- consume(2,2,add); // 4
- consume(10,16,multiply); // 160
- consume("Mary","Poppins", greeting); // Hello Mary Poppins, nice to meet you!
+ console.log(consume(2,2,add)); // 4
+ console.log(consume(10,16,multiply)); // 160
+ console.log(consume("Mary","Poppins", greeting)); // Hello Mary Poppins, nice to meet you!
 
 
 // ==== Closures ==== 
