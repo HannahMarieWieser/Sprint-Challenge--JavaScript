@@ -60,7 +60,7 @@ function greeting(arg1, arg2){
 // Explain in your own words why `nestedfunction()` can access the variable `internal`.
 
 // Explanation:
-// nestedfunction() can acess the variable internal because it is able to reach outside of its scope, in this case the scope of nestedfunction, and look for its cariable. 
+// nestedfunction() can acess the variable internal because it is able to reach outside of its scope, in this case the scope of nestedfunction, and look for its variable. 
 
 
 const external = "I'm outside the function";
